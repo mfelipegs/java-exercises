@@ -36,9 +36,9 @@ public class GradeAvg {
                 
                 avg2 = (n4 + n5 + n6) / 3;
 		
-		sum = (avg1 + avg2) / 2;
+		sum = avg1 + avg2;
 
 		System.out.println("Average of grades: " + avg2);
-		System.out.println("Total average: " + sum);
+		System.out.println("Sum of the average: " + sum);
 	}
 }
