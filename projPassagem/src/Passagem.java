@@ -104,6 +104,27 @@ public class Passagem {
     
     public void cadastrarDadosPassagem() {
         Scanner ent = new Scanner(System.in);
+        
+        System.out.println("Digite o local da viagem: ");
+        setLocalViagem(ent.next());
+        System.out.println("Digite a data da passagem: ");
+        setData(ent.next());
+        System.out.println("Digite o horário: ");
+        setHorario(ent.next());
+        System.out.println("Digite o número da poltrona: ");
+        setNumpoltrona(ent.next());
     }
     
+    public void mostrarDadosPassageiro() {
+        System.out.println("Nome do passageiro: " + getNomePassageiro()
+                            + "\n RG: " + getRG()
+                            + "\n Telefone: " + getTelefone() );
+    }
+    
+    public void mostrarDadosPassagem() {
+        System.out.println("Local da viagem: " + getLocalViagem()
+                            + "\n Data: " + getData()
+                            + "\n Horário: " + getHorario()
+                            + "\n Número da poltrona: " + getNumpoltrona() );
+    }
 }
