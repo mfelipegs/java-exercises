@@ -71,7 +71,7 @@ public class MediaMatematica {
         System.out.println("Digite a nota 2: ");
         setNumero2(e.nextDouble());
         
-        setMedia((numero1 + numero2)/2);
+        setMedia((getNumero1() + getNumero2())/2);
         
         System.out.println("Aluno: " + getNome()
                         + "\n Media: " + getMedia());

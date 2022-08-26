@@ -48,7 +48,7 @@ public class Dobro {
         
         System.out.println("Digite o número: ");
         setNumero(e.nextDouble());
-        setCalculo(numero * 2);
+        setCalculo(getNumero() * 2);
         System.out.println("Cálculo do dobro: " + getCalculo());
         
     }

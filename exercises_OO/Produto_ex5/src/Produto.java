@@ -71,7 +71,7 @@ public class Produto {
         setQtde(e.nextInt());
         System.out.println("Digite o valor do produto: ");
         setValor(e.nextDouble());
-        setTotal(qtde * valor);
+        setTotal(getQtde() * getValor());
         System.out.println("Produto: " + getNome()
                         + "\n Valor Total: " + getTotal());
     }
