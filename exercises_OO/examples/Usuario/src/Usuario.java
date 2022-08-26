@@ -53,7 +53,8 @@ public class Usuario {
     
     //podia ser this.nome ali, pq ta na propria classe
     public void Mensagem() {
-        System.out.println("Nome: " + getNome()) + 
-                "\n Login: " + getLogin() + "\n Senha: " + getSenha() );
+        System.out.println("Nome: " + getNome()
+                + "\n Login: " + getLogin() 
+                + "\n Senha: " + getSenha() );
     }
 }

@@ -23,6 +23,7 @@ public class Principal {
         user.setNome("Matheus Felipe");
         user.setLogin("math");
         user.setSenha("12345Ma");
+        user.Mensagem();
     }
     
 }
