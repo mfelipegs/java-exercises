@@ -37,7 +37,7 @@ public class Quadrado {
         
         System.out.println("Digite um número:");
         setNumero(e.nextInt());
-        setResultado(getNumero() * getNumero());
+        setResultado((int)Math.pow(getNumero(),2));
     }
     
     public String mostrarQuadrado() {
