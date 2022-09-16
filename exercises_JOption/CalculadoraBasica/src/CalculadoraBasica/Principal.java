@@ -61,7 +61,7 @@ public class Principal {
                     JOptionPane.showMessageDialog(null,"Finalizando o programa");// show mostra a mensagem
                     break;
                 default:
-                    JOptionPane.showMessageDialog(null,"Opção Inváliida");
+                    JOptionPane.showMessageDialog(null,"Opção Inválida");
                     break;
             }
             

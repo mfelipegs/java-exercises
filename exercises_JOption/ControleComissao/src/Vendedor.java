@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -62,11 +65,11 @@ public class Vendedor {
     }
     
     public void entrarNome() {
-        
+        setNome(JOptionPane.showInputDialog("Digite o nome: "));
     }
     
     public void entrarSalarioBase() {
-        
+        setSalarioBase(Double.parseDouble(JOptionPane.showInputDialog("Digite o salário base: ")));
     }
     
     

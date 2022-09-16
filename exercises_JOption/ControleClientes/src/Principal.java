@@ -8,34 +8,28 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        Vendedor vend = new Vendedor();
+        Cliente cli = new Cliente();
         
         int op;
         
-        double valVend;
-        
         do {
-            // conversão para inteiro Integer.parsetInt
-            op = Integer.parseInt(JOptionPane.showInputDialog("Digite "
-                    + "\n 1 - Nome"
-                    + "\n 2 - Salário Base"
-                    + "\n 3 - Valor Vendido / Calcular Comissão"
+            op = Integer.parseInt(JOptionPane.showInputDialog("Menu de ações: "
+                    + "\n 1 - Cadastrar cliente"
+                    + "\n 2 - Listar cliente"
+                    + "\n 3 - Calcular limite de crédito"
                     + "\n 0 - Sair"));
             
             switch(op) {
                 case 1:
-                    vend.entrarNome();
+                    cli.cadastrarCliente();
                     break;
                     
                 case 2: 
-                    vend.entrarSalarioBase();
+                    cli.listarCliente();
                     break;
                 
                 case 3:
-                    valVend = Double.parseDouble(JOptionPane.showInputDialog("Valor vendido: "));
-                    JOptionPane.showMessageDialog(null,"O vendedor " + vend.getNome() +
-                            " teve o salário final de " + vend.calculoComissao(valVend));
+                    cli.calcularLimiteCredito();
                     break;
                 
                 case 0: 
