@@ -76,7 +76,13 @@ public class Produto {
     }
     
     public double pedido(int qtde) {
-        
+        double valorTotal;
+        valorTotal = this.getPrecoUnitario()*qtde;
         return valorTotal;
+    }
+    
+    public void vender(int qtde) {
+        this.setEstoqueDisponivel(this.getEstoqueDisponivel() - qtde);
+        JOptionPane.showMessageDialog(null, "Venda realizada com sucesso!");
     }
 }
