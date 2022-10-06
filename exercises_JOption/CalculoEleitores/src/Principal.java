@@ -23,8 +23,7 @@ public class Principal {
             op = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opção: "
                     + "\n1 - Inserir quantidade de votos"
                     + "\n2 - Calcular Total eleitores"
-                    + "\n3 - Calcular percentual de votos"
-                    + "\n4 - Mostrar percentual de votos"
+                    + "\n3 - Calcular e mostrar percentual de votos"
                     + "\n0 - Sair"));
             
             switch(op) {

@@ -107,5 +107,10 @@ public class Eleitores {
         setPercBrancos((getNumeroVotosBrancos() * 100)/getNumeroTotalEleitores());
         setPercNulo((getNumeroVotosNulos() * 100)/getNumeroTotalEleitores());
         setPercValidos((getNumeroVotosValidos() * 100)/getNumeroTotalEleitores());
+        
+        JOptionPane.showMessageDialog(null, "Porcentagem de votos brancos: "
+                + getPercBrancos() + "\nPorcentagem de nulos: " + getPercNulo()
+                + "\nPorcentagem de válidos: " + getPercValidos()
+        );
     }
 }
