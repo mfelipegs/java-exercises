@@ -5,7 +5,9 @@
  */
 package Model;
 
+import Control.Conexao;
 import java.sql.ResultSet;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -17,6 +19,8 @@ public class Cliente {
     private String telefoneCliente;
     private String emailCliente;
 
+    Conexao con = new Conexao();
+    
     public Cliente() {
         this(0, "", "", "");
     }
@@ -65,12 +69,18 @@ public class Cliente {
         String sql;
         sql = "INSERT INTO Clientes(codigoCliente, nomeCliente, telefoneCliente, emailCliente) "
                 + "VALUES( " + this.getCodigoCliente() + " ,'" + this.getNomeCliente() + "', '" + this.getTelefoneCliente() + "', '" + this.getEmailCliente() + "')";
+        con.executeSQL(sql);
+        JOptionPane.showMessageDialog(null, "Gravado com Sucesso...");
     }
     
     //METODO CONSULTAR DADOS, com retorno
     public ResultSet consultar() {
-        String sql_consulta = "SELECT * FROM Clientes";
-        return sql_consulta;
+        ResultSet tabela;
+        tabela = null;
+        
+        String sql = "SELECT * FROM Clientes";
+        tabela = con.RetornarResultset(sql);
+        return tabela;
     }
     
     
